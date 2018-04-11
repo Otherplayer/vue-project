@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+![image](https://github.com/Otherplayer/vue-project/raw/master/WX20180411-172411@2x.png)
+
 ## Build Setup
 
 ``` bash
