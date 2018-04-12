@@ -1,7 +1,7 @@
 <template>
   <div id="app-header">
     <!--logo-->
-    <div class="header-logo">
+    <div class="header-logo" @click="mainHome">
         Fresh Box
     </div>
     <!--setting-->
@@ -20,7 +20,12 @@
 
 <script>
   export default {
-    name:'app-header'
+    name:'app-header',
+    methods: {
+      mainHome () {
+        this.$router.push({ name: 'hello' });
+      }
+    }
   }
 </script>
 

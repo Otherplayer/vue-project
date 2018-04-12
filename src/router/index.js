@@ -11,7 +11,7 @@ const Bar = { template: '<div>Error</div>' }
 
 const routes = [
   { path: '/',
-    name:'HelloWorld',
+    name:'hello',
     component: HelloWorld },
   { path: '/foo',
     name:'foo',
