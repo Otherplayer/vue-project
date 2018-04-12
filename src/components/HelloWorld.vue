@@ -15,7 +15,7 @@
 
 <script>
 
-import ApiService from './../common/apiservice'
+import ApiService from '../common/api'
 
 export default {
   name: 'HelloWorld',
@@ -35,6 +35,7 @@ export default {
       console.log('获取数据');
       console.log(res);
     })
+
 
     // // self.ws = new WebSocket("ws://121.40.165.18:8088");
     // self.ws = new WebSocket("ws://localhost:8088");

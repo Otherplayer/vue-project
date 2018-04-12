@@ -35,8 +35,6 @@ const util = {
       return new Date(value).Format("yyyy-MM-dd hh:mm:ss");
     })
 
-
-
   }
 }
 
