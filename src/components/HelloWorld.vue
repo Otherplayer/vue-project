@@ -27,7 +27,8 @@ export default {
   created: function () {
     let self = this;
     self.isSupportSocket();
-    self.ws = new WebSocket("ws://121.40.165.18:8088");
+    // self.ws = new WebSocket("ws://121.40.165.18:8088");
+    self.ws = new WebSocket("ws://localhost:8088");
     this.ws.onopen = function() {
       self.readyState = self.ws.readyState;
       if (self.readyState === 1) {
