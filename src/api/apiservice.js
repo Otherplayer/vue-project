@@ -17,11 +17,6 @@ function fetchEmojis(successCallback, errorCallback) {
 
 
 
-
-
-
-
-
 /** -----basic */
 function domain() {
   return '';

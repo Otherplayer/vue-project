@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
 
-    <div>{{msg}}</div>
+    <div>{{ msg }}</div>
 
     <el-row>
       <el-button type="primary" plain @click="socketConnect">连接</el-button>
@@ -15,7 +15,7 @@
 
 <script>
 
-import ApiService from './../api/apiservice'
+// import ApiService from './../api/apiservice'
 
 export default {
   name: 'HelloWorld',
@@ -30,10 +30,8 @@ export default {
     let self = this;
     self.isSupportSocket();
 
-    ApiService.fetchEmojis(function (res) {
-      console.log('---获取数据成功');
-      console.log(res);
-    });
+    // self.ApiService.says('wang wang wang');
+    console.log(self.doubleNumber2(2));
 
     // // self.ws = new WebSocket("ws://121.40.165.18:8088");
     // self.ws = new WebSocket("ws://localhost:8088");

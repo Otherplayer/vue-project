@@ -12,6 +12,14 @@ import VueResource from 'vue-resource'
 import VueCookie from 'vue-cookie';
 import VueBus from 'vue-bus';
 
+
+import util from './api/util'
+import ApiService from './api/apiservice'
+
+Vue.use(util)
+Vue.use(ApiService)
+
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
