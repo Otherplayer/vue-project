@@ -15,6 +15,8 @@
 
 <script>
 
+import ApiService from './../api/apiservice'
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -27,26 +29,32 @@ export default {
   created: function () {
     let self = this;
     self.isSupportSocket();
-    // self.ws = new WebSocket("ws://121.40.165.18:8088");
-    self.ws = new WebSocket("ws://localhost:8088");
-    this.ws.onopen = function() {
-      self.readyState = self.ws.readyState;
-      if (self.readyState === 1) {
-        self.showNotify('连接成功',self.readyState);
-      }else{
-        self.showNotify('连接失败',self.readyState);
-      }
-    };
-    this.ws.onmessage = function (evt) {
-      console.log(evt.data);
-      self.showNotify('收到数据',evt.data);
-    };
-    this.ws.onError = function (err) {
-      self.showNotify('出错了',err);
-    }
-    this.ws.onclose = function() {
-      self.showNotify('连接已关闭','---');
-    };
+
+    ApiService.fetchEmojis(function (res) {
+      console.log('---获取数据成功');
+      console.log(res);
+    });
+
+    // // self.ws = new WebSocket("ws://121.40.165.18:8088");
+    // self.ws = new WebSocket("ws://localhost:8088");
+    // this.ws.onopen = function() {
+    //   self.readyState = self.ws.readyState;
+    //   if (self.readyState === 1) {
+    //     self.showNotify('连接成功',self.readyState);
+    //   }else{
+    //     self.showNotify('连接失败',self.readyState);
+    //   }
+    // };
+    // this.ws.onmessage = function (evt) {
+    //   console.log(evt.data);
+    //   self.showNotify('收到数据',evt.data);
+    // };
+    // this.ws.onError = function (err) {
+    //   self.showNotify('出错了',err);
+    // }
+    // this.ws.onclose = function() {
+    //   self.showNotify('连接已关闭','---');
+    // };
   },
   mounted: function () {
 
