@@ -15,7 +15,7 @@
 
 <script>
 
-// import ApiService from './../api/apiservice'
+import ApiService from './../common/apiservice'
 
 export default {
   name: 'HelloWorld',
@@ -30,8 +30,11 @@ export default {
     let self = this;
     self.isSupportSocket();
 
-    // self.ApiService.says('wang wang wang');
     console.log(self.doubleNumber2(2));
+    ApiService.fetchEmojis(function (res) {
+      console.log('获取数据');
+      console.log(res);
+    })
 
     // // self.ws = new WebSocket("ws://121.40.165.18:8088");
     // self.ws = new WebSocket("ws://localhost:8088");

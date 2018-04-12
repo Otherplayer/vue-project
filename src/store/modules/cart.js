@@ -1,4 +1,4 @@
-import shop from '../../api/shop'
+import shop from '../../common/shop'
 
 // initial state
 // shape: [{ id, quantity }]

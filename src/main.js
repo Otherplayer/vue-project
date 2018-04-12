@@ -13,11 +13,9 @@ import VueCookie from 'vue-cookie';
 import VueBus from 'vue-bus';
 
 
-import util from './api/util'
-import ApiService from './api/apiservice'
+import util from './common/util'
 
 Vue.use(util)
-Vue.use(ApiService)
 
 
 Vue.config.productionTip = false
