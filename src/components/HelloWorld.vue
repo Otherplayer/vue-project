@@ -5,7 +5,7 @@
 
     <el-row>
       <el-button type="primary" plain @click="socketConnect">连接</el-button>
-      <el-button type="success" plain @click="socketSend" disabled="readyState !== 1">发送hello world!</el-button>
+      <el-button type="success" plain @click="socketSend">发送hello world!</el-button>
       <el-button type="info" plain @click="socketClose">断开</el-button>
     </el-row>
 
