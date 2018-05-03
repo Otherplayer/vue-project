@@ -6,6 +6,8 @@
 
 ## Build Setup
 
+<font color=#409EFF size=4>#409EFF Blue</font>
+
 ``` bash
 # install dependencies
 npm install
