@@ -6,10 +6,6 @@
 
 ## Build Setup
 
-<div style="background-color: #409EFF;display: inline-block;border-radius: 4px;margin: 10px;padding: 10px;color: #fff;width: 200px;text-align: center;line-height: 20px;">Main<div>sdsfafd</div></div>
-<div style="background-color: #67C23A;display: inline-block;border-radius: 4px;margin: 10px;padding: 10px;color: #fff;width: 200px;text-align: center;line-height: 20px;">Success</div>
-
-
 ``` bash
 # install dependencies
 npm install
