@@ -22,9 +22,6 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-<div style="background-color: #67C23A;display: inline-block;border-radius: 4px;margin: 10px;padding: 10px;color: #fff;width: 200px;text-align: center;line-height: 20px;">
-Success<div class="value">#909399</div>
-</div>
 # ---
 
 [vue-bus]()
